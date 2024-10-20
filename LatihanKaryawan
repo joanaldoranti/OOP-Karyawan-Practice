@@ -1,0 +1,33 @@
+package LatihanKaryawan;
+
+public class LatihanKaryawan {
+    public static void main(String[] args) {
+        KaryawanTetap joana = new KaryawanTetap("joana", "001", false, "pengangguran", 366);
+        joana.tampilkanNama();
+        joana.panggilMethodSuperclass();
+
+        KaryawanKontrak fufufafa = new KaryawanKontrak("fufufafa", "002", false, "beban", 366);
+
+        //memanggil method dari superclassnya
+        fufufafa.tampilkanGaji(2000000000);
+
+        //meganggil method dari calssnya, bukan superclassnya
+        fufufafa.tampilkanjabatan();
+        fufufafa.panggilMethodSuperClass(100000000);
+
+        //upcasting
+        Karyawan asep = new KaryawanTetap("Asep", "003", false, "kuli", 1);
+        asep.tampilkanGaji(8000000);
+
+        //mengecek tipe data
+        Integer bilangan = 10;
+        System.out.println(bilangan instanceof Integer);
+        System.out.println(fufufafa instanceof KaryawanKontrak);
+        System.out.println(asep instanceof Karyawan);
+
+        Programmer Budi = new Programmer("Budi", "000", false, 365, "bahasa manusia");
+        System.out.println(Budi.name);
+        Budi.tampilkanGaji(12345567);
+        Budi.tampilkanDetailKaryawan(1000000);
+    }
+}
