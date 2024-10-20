@@ -1,0 +1,20 @@
+package LatihanKaryawan;
+
+public class KaryawanKontrak extends Karyawan{
+    int durasiKontrak;
+
+    public KaryawanKontrak(String name, String idKaryawan, boolean jenisKelamin, String jabatan, int i) {
+        super(name, idKaryawan, jenisKelamin, jabatan);
+        this.durasiKontrak = durasiKontrak;
+    }
+
+    //memanggil attribute superclass
+    public void tampilkanjabatan() {
+        System.out.println("Jabatan : " + super.jabatan);
+    }
+
+    //memanggil method superclass
+    public void panggilMethodSuperClass(int gaji) {
+        super.tampilkanGaji(gaji);
+    }
+}
