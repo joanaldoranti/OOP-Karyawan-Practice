@@ -1,0 +1,20 @@
+package LatihanKaryawan;
+
+public class KaryawanTetap extends Karyawan {
+    int jatahCuti;
+
+    public KaryawanTetap(String name, String idKaryawan, boolean jenisKelamin, String jabtan, int jatahCuti) {
+        super(name, idKaryawan, jenisKelamin, jabtan);
+        this.jatahCuti = jatahCuti;
+    }
+
+    //memanggil attribute dari superclass
+    public void tampilkanNama() {
+        System.out.println(super.name);
+    }
+
+    //memanggil method dari superclass nya
+    public void panggilMethodSuperclass() {
+        super.tampilkanGaji(10000);
+    }
+}
