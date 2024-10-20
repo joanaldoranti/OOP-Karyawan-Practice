@@ -1,0 +1,15 @@
+package LatihanKaryawan;
+
+public class Programmer extends KaryawanTetap{
+    String bahasaPemrograman;
+    public Programmer(String name, String idKaryawan, boolean jenisKelamin, int jatahCuti, String bahasaPemrograman) {
+        super(name, idKaryawan, jenisKelamin, "programmer", jatahCuti);
+        this.bahasaPemrograman = bahasaPemrograman;
+    }
+
+    void tampilkanDetailKaryawan(int gaji) {
+        tampilkanNama();
+        System.out.println("Bahasa pemrograman : " + bahasaPemrograman);
+        tampilkanGaji(gaji);
+    }
+}
