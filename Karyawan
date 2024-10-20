@@ -1,0 +1,19 @@
+package LatihanKaryawan;
+
+public class Karyawan {
+    String name;
+    String idKaryawan;
+    boolean jenisKelamin;
+    String jabatan;
+
+    public Karyawan(String name, String idKaryawan, boolean jenisKelamin, String jabatan) {
+        this.name = name;
+        this.idKaryawan = idKaryawan;
+        this.jenisKelamin = jenisKelamin;
+        this.jabatan = jabatan;
+    }
+
+    public void tampilkanGaji(int gaji) {
+        System.out.println("Gaji karyawan " + name + " : Rp" + gaji + ",00");
+    }
+}
